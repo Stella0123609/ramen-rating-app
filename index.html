@@ -27,7 +27,14 @@
     <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
     <input type="text" id="comment" placeholder="Comment" required> 
     <input type="url" id="image-url" placeholder="Image URL" required>
-    <button type="submit">Add Ramen</button>
+    <button type="submit">Create</button>
+</form>
+
+<form id="edit-ramen-form" style="display:none;">
+    <h3>Edit Ramen Details</h3>
+    <input type="number" id="edit-rating" placeholder="Rating (1-5)" min="1" max="5">
+    <input type="text" id="edit-comment" placeholder="Edit Comment">
+    <button type="submit">Update</button>
 </form>
 
     <script src="./scripts/scripts.js"></script>

@@ -42,3 +42,10 @@ function addSubmitListener() {
 }
 
 addSubmitListener();
+function main() {
+    displayRamens();
+    addSubmitListener();
+}
+
+document.addEventListener("DOMContentLoaded", main);
+
