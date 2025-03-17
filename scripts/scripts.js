@@ -49,3 +49,11 @@ function main() {
 
 document.addEventListener("DOMContentLoaded", main);
 
+function handleClick(ramen) {
+    const detailDiv = document.getElementById('ramen-detail');
+    detailDiv.innerHTML = `<h2 id="ramen-name">${ramen.name}</h2>
+      <h3 id="ramen-restaurant">${ramen.restaurant}</h3>
+      <p id="ramen-rating">Rating: ${ramen.rating}</p>
+      <p id="ramen-comment">${ramen.comment}</p>
+      <button id="edit-button">Edit</button>`;
+}
